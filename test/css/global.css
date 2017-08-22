@@ -1,0 +1,48 @@
+@charset "UTF-8";
+button,input{outline:0}
+a,body,dd,div,dl,dt,h1,h2,h3,h4,h5,h6,html,input,li,ol,p,span,ul{margin:0;padding:0}
+*{-webkit-tap-highlight-color:rgba(255,255,255,0)}
+body,html{width:100%;font-size:30px;background:#fff}
+button{border:none;background:0 0;padding:0}
+li,ol,ul{list-style:none}
+table{border-collapse:collapse;border-spacing:0}
+em,h1,h2,h3,h4,h5,h6,i{font-weight:400}
+input::-webkit-inner-spin-button{-webkit-appearance:none}
+img{display:block;width:100%;border:0}
+del{text-decoration:line-through}
+a:active,a:hover,a:link,a:visited{text-decoration:none}
+.container{max-width:768px;margin:0 auto;min-width:320px}
+.main{width:7.5rem;height:12.74rem;position:relative}
+.main1 .m1-btn{position:absolute;bottom:1rem;left:50%;width:3.52rem;height:1.39rem;margin-left:-1.7rem}
+.main2 .choice .yuan{position:absolute;z-index:1}
+.main2 .choice .active{position:absolute;z-index:3;display:none}
+.main2 .choice .active1,.main2 .choice .yuan1{width:2.68rem;height:1.33rem;left:.74rem;top:5.48rem}
+.main2 .choice .active11,.main2 .choice .yuan11{width:3.34rem;height:1.52rem;left:3.9rem;top:5.41rem}
+.main2 .choice .active2,.main2 .choice .yuan2{width:2.73rem;height:.95rem;left:.67rem;top:6.74rem}
+.main2 .choice .active22,.main2 .choice .yuan22{width:3.13rem;height:.93rem;left:3.88rem;top:6.7rem}
+.main2 .choice .active3,.main2 .choice .yuan3{width:2.79rem;height:1.07rem;left:.6rem;top:7.7rem}
+.main2 .choice .active33,.main2 .choice .yuan33{width:2.81rem;height:.84rem;left:4.09rem;top:7.79rem}
+.main2 .choice .active4,.main2 .choice .yuan4{width:2.71rem;height:1.11rem;left:.71rem;top:8.7rem}
+.main2 .choice .active44,.main2 .choice .yuan44{width:2.9rem;height:.96rem;left:4.12rem;top:8.76rem}
+.main3 .line{position:absolute;top:48%;left:.01rem;width:7.48rem;height:.08rem;-webkit-animation:finger ease 3.5s infinite;-moz-animation:finger ease 3.5s infinite;animation:finger ease 3.5s infinite}
+.main3 .btn{position:absolute;top:6.5rem;left:2.4rem;width:3rem;height:3.9rem}
+@-webkit-keyframes finger{0%,100%{top:48%}
+50%{top:80%}
+}
+@-moz-keyframes finger{0%,100%{top:48%}
+50%{top:80%}
+}
+@keyframes finger{0%,100%{top:48%}
+50%{top:80%}
+}
+.result{position:relative}
+.result .result-bg{width:100%}
+.result .result{width:3.24rem;height:.94rem;position:absolute;top:4.11rem;left:3.03rem}
+.result .result-detail{width:5.88rem;height:2.77rem;position:absolute;top:6.2rem;left:.87rem}
+.result .download-app{display:block;width:3.36rem;height:1.24rem;position:absolute;left:.38rem;bottom:1.1rem;background:url(../images/download-app.png);-moz-background-size:100% 100%;-o-background-size:100% 100%;background-size:100% 100%}
+.result .share-btn{width:3.06rem;height:1.36rem;position:absolute;right:.3rem;bottom:1.1rem;background:url(../images/share-btn.png);-moz-background-size:100% 100%;-o-background-size:100% 100%;background-size:100% 100%}
+.share-bg,.share-tip{position:fixed;left:0;right:0;top:0;bottom:0}
+.share-bg{z-index:999;background:rgba(0,0,0,.7)}
+.share-tip{z-index:9999}
+.share-tip img{width:5.93rem;margin:.2rem auto 0}
+/*# sourceMappingURL=maps/global.css.map */

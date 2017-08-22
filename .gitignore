@@ -1,8 +1,7 @@
 .cache
 .idea
 
-# For testing
-test/
+
 
 node_modules/
 npm-debug.log

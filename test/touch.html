@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
+    <meta name="applicable-device" content="mobile">
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <meta content="email=no" name="format-detection"/>
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta http-equiv="Cache-Control" content="no-transform"/>
+    <meta http-equiv="Pragma" content="no-cache">
+    <script>
+        !(function (doc, win) {
+            var docEle = doc.documentElement,
+                evt = "onorientationchange" in window ? "orientationchange" : "resize",
+                fn = function () {
+                    var width = docEle.clientWidth;
+                    if (width > 768) width = 768;
+                    if (width < 320) width = 320;
+                    width && (docEle.style.fontSize = 100 * (width / 750) + "px");
+                };
+            win.addEventListener(evt, fn, false);
+            doc.addEventListener("DOMContentLoaded", fn, false);
+        }(document, window));
+    </script>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+
+<title></title>
+</head>
+<body>
+<div class="container">
+  <div class="main main3">
+    <img src="images/ac-03.png">
+    <img class="line" src="images/ac-031.png">
+    <div class="btn"></div>
+  </div>
+</div>
+
+<script src="js/zepto.min.js"></script>
+<script src="js/fastclick.min.js"></script>
+<script>
+ $(function () {
+   FastClick.attach(document.body);
+
+   //按上手指5秒种
+   var touchTimer;
+   $('.btn').on('touchstart',function (e) {
+      e.preventDefault();
+      touchTimer = setTimeout(function () {
+        clearTimeout(touchTimer);
+        window.location.href = './result.html';
+      },3000)
+   });
+   $('.btn').on('touchend',function () {
+       clearTimeout(touchTimer);
+   })
+ })
+</script>
+</body>
+</html>
